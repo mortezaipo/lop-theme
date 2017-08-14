@@ -33,7 +33,7 @@ load-file RET /path/to/lop-theme.el
 
 ### Troubleshoot:
 
-LOP theme works fine on Emacs GUI software, but it's possible that this theme doesn't work well on Terminal environment, So until we fix this issue completely, you could handle this situation by below code in your `~/.emacs`:
+LOP theme works fine on Emacs GUI software, but it's possible that this theme doesn't work well on Terminal environment, So until we handle/fix this issue completely, you could handle this situation by below code in your `~/.emacs`:
 ```lisp
 (if (not window-system)
     (load-theme 'monokai t)
