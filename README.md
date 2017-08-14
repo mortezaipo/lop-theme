@@ -5,8 +5,22 @@
 
 ### Usage:
 
-Loading Emacs theme is so easy:
+#### Install:
 
+To install it in your system, try these steps:
+```
+$ mkdir -p ~/.emacs.d/themes
+$ echo '(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")' > ~/.emacs
+```
+
+Then set this theme as your default theme by adding this line in `~/.emacs` file:
+```
+(load-theme 'lop t)
+```
+
+#### Manual:
+
+Loading Emacs theme is so easy:
 ```
 load-file RET /path/to/lop-theme.el
 ```
