@@ -10,7 +10,11 @@
 To install it in your system, try these steps:
 ```
 $ mkdir -p ~/.emacs.d/themes
-$ echo '(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")' > ~/.emacs
+```
+
+Then introduce your theme directory to your emacs by adding this line in `~/.emacs` file:
+```
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ```
 
 Then set this theme as your default theme by adding this line in `~/.emacs` file:
