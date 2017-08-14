@@ -12,6 +12,8 @@ To install it in your system, try these steps:
 $ mkdir -p ~/.emacs.d/themes
 ```
 
+Then put `lop-theme.el` in the created directory.
+
 Then introduce your theme directory to your emacs by adding this line in `~/.emacs` file:
 ```
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
