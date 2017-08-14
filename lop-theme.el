@@ -129,8 +129,8 @@
      (,lop-256-class (:foreground ,func-256 :bold t))))
 
   `(font-lock-keyword-face
-    ((,lop-class     (:bold ,class :foreground ,keyword))
-     (,lop-256-class (:bold ,class-256 :foreground ,keyword-256))))
+    ((,lop-class     (:bold ,lop-class :foreground ,keyword))
+     (,lop-256-class (:bold ,lop-256-class :foreground ,keyword-256))))
 
   `(font-lock-string-face
     ((,lop-class     (:foreground ,str))
@@ -301,7 +301,7 @@
      (,lop-256-class (:foreground ,bg4-256))))
 
 	`(org-scheduled
-	  ((,lop-class     (:foreground ,type))
+    ((,lop-class     (:foreground ,type))
      (,lop-256-class (:foreground ,type-256))))
 
   `(org-scheduled-today
@@ -349,11 +349,11 @@
      (,lop-256-class (:foreground ,fg4-256))))
 
   `(ido-first-match
-    ((,lop-class     (:foreground ,keywo))
+    ((,lop-class     (:foreground ,keyword))
      (,lop-256-class (:foreground ,keyword-256 :bold t))))
    
   `(gnus-header-content
-    ((,lop-class     (:foreground ,keywo))
+    ((,lop-class     (:foreground ,keyword))
 	   (,lop-256-class (:foreground ,keyword-256))))
 
   `(gnus-header-from
@@ -558,7 +558,7 @@
 
   `(magit-branch
     ((,lop-class (:foreground ,const :weight bold))
-     (,lop-class (:foreground ,const-256 :weight bold))))
+     (,lop-256-class (:foreground ,const-256 :weight bold))))
 
   `(magit-log-author
     ((,lop-class     (:foreground ,fg3))
@@ -781,8 +781,8 @@
      (,lop-256-class (:inherit region))))
 
   `(web-mode-builtin-face
-    ((,log-class     (:inherit ,font-lock-builtin-face))
-     (,log-256-class (:inherit ,font-lock-builtin-face))))
+    ((,lop-class     (:inherit ,font-lock-builtin-face))
+     (,lop-256-class (:inherit ,font-lock-builtin-face))))
 
   `(web-mode-comment-face
     ((,lop-class     (:inherit ,font-lock-comment-face))
